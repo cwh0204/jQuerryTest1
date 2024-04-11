@@ -1,0 +1,77 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.Divss{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.Full_Flex_Div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.FlexDiv{
+    display: flex;
+}
+.LeftDiv{
+    width: 83%;
+    min-width: 1250px;
+    height: 100%;
+    background: skyblue;
+}
+.RightDiv{
+    width: 17%;
+    height: 100%;
+    background: cornflowerblue;
+    overflow-y: scroll;
+    min-width: 225px;
+}
+.ProfileDiv{
+    border-radius: 15px;
+    margin: 5%;
+    width: 90%;
+    height: 110px;
+    background: grey;
+}
+.MainIcon{
+    margin: 5%;
+    width: 120px;
+    height: 120px;
+}
+.icon{
+    margin: 5%;
+    width: 60px;
+    height: 60px;
+}
+.paddingSpan{
+    margin-top: 5%;
+}
+.margin10px{
+    margin: 10px;
+}
+.MainSpan{
+    font-size: 55px;
+    color: white;
+}
+.span1{
+    font-size: 10px;
+    color: white;
+}
+.span2{
+    font-size: 23px;
+    color: white;
+}
+.MainCardDiv{
+    border-radius: 25px;
+    width: 450px;
+    height: 250px;
+    margin-left: 30%;
+    margin-top: 30%;
+    background-color: gray;
+}
+.select{
+    border: solid 2px greenyellow;
+}

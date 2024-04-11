@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/test.css" />
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+        <title>Document</title>
+        <script src="../js/menu.js"></script>
+    </head>
+    <body>
+        <div class="Full_Flex_Div">
+            <div class="LeftDiv">
+            </div>
+            <div class="RightDiv">
+            </div>
+        </div>
+        <script>
+                $.ajax({
+                    url: "https://koreanjson.com/users",
+                    dataType:'json',
+                    type:'GET',
+                    success:function(result){
+                        for (var i = 0; i <= result.length - 1; i++) {
+                            var name = result[i].name;
+                            var username = result[i].username;
+                            var phone = result[i].phone;
+                            var address = result[i].city + result[i].district + result[i].street;
+                            User_Card(name,username, phone, address);
+                        }
+                    }
+                });
+                $(document).on('click', '.ProfileDiv', function (e) {
+                    $('.ProfileDiv').removeClass('select')
+                    var index = $('.ProfileDiv').index(this);
+                    $(this).addClass('select');
+                    $('.LeftDiv').empty();
+                    $.ajax({
+                        url: "https://koreanjson.com/users",
+                        dataType:'json',
+                        type:'GET',
+                        success:function(result){
+                            for (var i = 0; i <= result.length - 1; i++) {
+                                if(i == index){
+                                    var name = result[i].name;
+                                    var username = result[i].username;
+                                    var phone = result[i].phone;
+                                    var address = result[i].city + result[i].district + result[i].street;
+                                    Main_Card(name, username, phone, address);
+                                }
+                            }
+                        }
+                    });
+                });
+        </script>
+    </body>
+</html>
