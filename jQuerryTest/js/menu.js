@@ -5,7 +5,7 @@ function Main_Card(name,username, phone, address){
     $('.LeftDiv').append('<div></div>').css('justify-content','center');
     $('.LeftDiv').children('div').append('<div class="MainCardDiv"></div>');
     $('.MainCardDiv').append('<div></div>').children('div').append(newinconDiv1).append(newinconDiv2);
-    $(newinconDiv1).append('<img class="MainIcon" src="../icon/icon.png">');
+    $(newinconDiv1).append('<img class="MainIcon" src="./icon/icon.png">');
     $(newinconDiv1).append('<div></div>')
     $(newinconDiv2).append('<div></div>')
     $(newinconDiv2).children('div').append('<span class="span2">주소 : '+ address +'</span>').css('margin-left','30px').css('margin-bottom', '10px');
@@ -20,7 +20,7 @@ function User_Card(name,username, phone, address){
     var newinconDiv2 = $('<div class="icondiv2"></div>')
     $('.RightDiv').append(newProfileDiv);
     newProfileDiv.append('<div></div>').children('div').append(newinconDiv1).append(newinconDiv2);
-    $(newinconDiv1).append('<img class="icon" src="../icon/icon.png">');
+    $(newinconDiv1).append('<img class="icon" src="./icon/icon.png">');
     $(newinconDiv1).append('<div></div>')
     $(newinconDiv2).append('<div></div>')
     $(newinconDiv1).children('div').css('margin-top','15px')
