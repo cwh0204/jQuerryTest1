@@ -8,7 +8,6 @@ function User_Card1(name,username, phone, address , type){
         $('.LeftDiv').append('<div></div>').css('justify-content','center');
         $('.LeftDiv').children('div').append('<div class="MainCardDiv"></div>');
         $('.MainCardDiv').append('<div></div>').children('div').append(newinconDiv1).append(newinconDiv2);
-        console.log("클릭");
         icon = "MainIcon";
         SpanSize = "span2";
     }else{
