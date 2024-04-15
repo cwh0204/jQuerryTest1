@@ -16,8 +16,8 @@ function User_Card1(name,username, phone, address , type){
     }
     
     $(newinconDiv1).append('<img class="'+icon+'" src="./jQuerryTest/icon/icon.png">');
-    $(newinconDiv1).append('<div></div>')
-    $(newinconDiv2).append('<div></div>')
+    $(newinconDiv1).append('<div></div>');
+    $(newinconDiv2).append('<div></div>');
     $(newinconDiv1).children('div').css('margin-top','15px')
     .append('<div><span class="'+SpanSize+'">이름 : '+ name +'</span></div>')
     .append('<div><span class="'+SpanSize+'">닉네임 : '+ username +'</span></div>')
